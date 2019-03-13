@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  
+  <ion-row>
+    <ion-col>
+      <ion-list inset>
+        
+        <ion-item>
+          <ion-label>Nombor IC</ion-label>
+            <ion-input type="text" [(ngModel)]="ic" name="ic"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Kata Laluan</ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+        </ion-item>
+        
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col class="signup-col">
+      <button ion-button full (click)="login()">Log Masuk</button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>
